@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    scroll-margin: smooth;
+}
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-15{
+    flex: 1.5;
+}
+.flex-2{
+    flex: 2;
+}
+.shadow{
+    box-shadow: 1px 1px 15px rgb(121, 121, 121);
+}
+
+/**** NAV ****/
+nav{
+    justify-content: space-between;
+    padding: 40px 0;
+    font-size: 20px;
+}
+
+.nav-left{
+    white-space: nowrap;
+}
+
+.nav-left h3{
+    font-size: 25px;
+}
+
+.nav-right{
+    align-items: center;
+}
+ul{
+    list-style: none;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+nav a{
+    color: #5e5e5e;
+}
+nav a:hover{
+    color: #000;
+}
+
+/**** HEADER ****/
+header{
+    background: linear-gradient(#1414143e, #0101012d), url("/images/game-console-1280.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+header img{
+    margin: 50px 0 35px 0;
+    width: 200px;
+    border: 6px #fff solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+header h1{
+    margin-bottom: 5px;
+    font-size: 40px;
+    letter-spacing: 0.4rem;
+}
+
+header p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header-icons{
+    letter-spacing: 0.5rem;    
+}
+header i{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.linked-color:hover{
+    color: #007BB5;
+    transition: 0.3s;
+}
+.twitt-color:hover{
+    color: #1DA1F2;
+    transition: 0.3s;
+}
+.insta-color:hover{
+    color: #C32AA3;
+    transition: 0.3s;
+}
+.fcb-color:hover{
+    color: #3B5998;
+    transition: 0.3s;
+}
+.git-color:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header-buttons{
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.header-buttons a{
+    color: #fff;
+    margin: 40px 0 50px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+.pdf-button{
+    border: 2px #fff solid;
+}
+.pdf-button:hover{
+    background-color: rgba(188, 188, 188, 0.277);
+}
+
+.hire_me-button{
+    background-color: #20c997;
+}
+.hire_me-button:hover{
+    background-color: #1dae82;
+}
+
+/**** SECTION ABOUT ME ****/
+#about-me{
+    margin: 60px 0;
+    padding: 55px;
+    justify-content: space-between;
+    gap: 100px;
+    line-height: 2rem;
+}
+
+#about-me h2{
+    margin-bottom: 20px;
+}
+
+#about-me p{
+    color: #5e5e5e;
+}
+
+.Bio div{
+    justify-content: space-between;
+    line-height: 2.7rem;
+}
+.bold{
+    font-weight: bold;
+}
+
+.Bio div i{
+    color: #20c997;
+    font-size: 20px;
+}
+
+/**** SECTION COMPETENCES ****/
+.skills{
+    background-image: url(/images/gradient_2.jpg);
+    padding: 55px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.div-skills{
+    gap: 10px;
+}
+.skills h3{
+    margin: 35px 0;
+    font-size: 25px;
+    font-weight: normal;
+}
+.computer-skills, .languages, .humain{
+    font-weight: 300;
+}
+
+.computer-skills i, .humain i{
+    color: #20c997;
+}
+
+.computer-skills p, .humain p{
+    margin-bottom: 32px;
+}
+
+.flags{
+    gap: 5px;
+}
+.languages img{
+    width: 30px;
+    margin-bottom: 25px;
+}
+
+/**** SECTION PORTFOLIO ****/
+.portfolio{
+    margin: 60px 0;
+    padding: 55px;
+}
+
+.portfolio h2{
+    font-size: 35px;
+}
+
+.projet-merlin, .projet-booki{
+    margin-top: 45px;
+    gap: 20px;
+}
+
+.img-projet{
+    text-align: center;
+    width: 100%;
+}
+
+.img-projet a{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.merlin{
+    width: 100%;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px #5e5e5e;
+    object-fit: contain;
+}
+
+.booki{
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px #5e5e5e;
+    object-fit: contain;
+}
+
+.img-projet img:hover{
+    box-shadow: 0px 14px 30px #5e5e5e;
+    transition: 0.6s;
+}
+
+.green{
+    color: #20c997;
+}
+
+.info-projet{
+    line-height: 2.5rem;
+}
+
+.info-projet h3{
+    margin: 20px 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/**** SECTION FORMATIONS ****/
+.formations h2{
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.nom-formations{
+    margin: 25px 0;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.date-formation{
+    padding: 50px;
+    background-image: url(/images/gradient_2.jpg);
+    object-fit: cover;
+    color: #fff;
+    flex: 0.8;
+}
+
+.date-formation h3{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.info-formation{
+    padding: 50px;
+    color: #5e5e5e;
+}
+
+.info-formation h3{
+    font-size: 20px;
+}
+
+/**** SECTION CONTACT ****/
+
+/**FORMULAIRE**/
+#contact{
+    margin: 60px 0;
+    padding: 55px;
+}
+#contact h2{
+    margin: 0 0 40px 0;
+}
+
+.form{
+    background-color: #f4f6f8;
+    padding: 10px 20px 20px 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.input-form{
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, label, textarea{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+input, textarea{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 3px #efefef solid;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-color: #20c997;
+}
+.submit-button{
+    background-color: #20c997;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: #1cb789;
+}
+
+/**INFO CONTACT**/
+.info-contact{
+    color: #5e5e5e;
+    padding: 25px;
+    line-height: 2.5rem;
+}
+
+.info-contact>p{
+    padding: 25px 0;
+}
+
+/**** FOOTER ****/
+footer{
+    background-image: url(/images/lodyas.png);
+    color: #fff;
+    text-align: center;
+    padding: 55px;
+}
+
+footer h3{
+    font-size: 30px;
+}
+
+footer p{
+    margin: 20px 0;
+}
+
+.header-icons i{
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.797);
+}
+
+footer i:hover{
+    color: rgb(209, 35, 209);
+    transition: 0.3s;
+}
+
+
+
+/**** MEDIA QUERRIES ****/
+@media screen and (max-width: 1300px) {
+    body{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about-me{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 0;
+    }
+    .nav-right{
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .skills h2{
+        margin-bottom: 10px;
+    }
+
+    .div-skills{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .flags{
+        justify-content: center;
+    }
+
+    .projet-merlin{
+        flex-direction: column;
+    }
+
+    .projet-booki{
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .merlin, .booki{
+        border-radius: 30px;
+    }
+
+    .nom-formations{
+        flex-direction: column;
+    }
+
+    #contact{
+        padding: 30px;
+    }
+    #contact h2{
+        margin-bottom: 0;
+    }
+    .contact{
+        flex-direction: column-reverse;
+    }
+
+    .info-contact p{
+        padding: 15px 0;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .header-buttons{
+        gap: 15px;
+    }
+    
+    .div_bio{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header-buttons{
+        flex-direction: column;
+        margin: 0 15px;
+        gap: 0;
+    }
+
+    .header-icons{
+        margin-bottom: 25px;
+    }
+    
+    .header-buttons a{
+        margin: 15px;
+    }
+}
